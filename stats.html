@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krim Stats</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+<body>
+
+<header>
+  <span>KRIM SCANNER</span>
+</header>
+<nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="cities.html">Cities</a></li>
+  <li><a href="crimesearch.html">Search</a></li>
+  <li><a href="stats.html">Stats</a></li>
+</nav>
+
+  <div class="stats-position">
+  <input type="text" id="city-stats" class="form-control" placeholder="Stockholm">
+  <input type="button" id="statsButton"  class="btn btn-primary" value="Sök Statistik">
+  </div>
+<div id="name"></div>
+
+  <div class="container">
+  <canvas id="myChart" width="800" height="400" aria-label="Hello" role="img">
+    <p>Hello Fallback</p>
+  </canvas>
+</div>
+
+
+
+<script src="stats.js"></script>
+</body>
+</html>

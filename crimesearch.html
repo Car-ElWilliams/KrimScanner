@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krim Scanner Sök</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <span>KRIM SCANNER</span>
+</header>
+<nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="cities.html">Cities</a></li>
+  <li><a href="crimesearch.html">Search</a></li>
+  <li><a href="stats.html">Stats</a></li>
+</nav>
+
+<div class="scanner">
+  <label for="city">Skriv Stad</label>
+  <input id="city" type="text" class="form-control" placeholder="Ex: Göteborg" value="">
+
+  <label for="crimeType">Välj Brott</label>
+  <select name="crime" id="crimeType" class="form-control">
+    <option value="">Alla</option>
+    <option value="Alkohollagen">Alkohollagen</option>
+    <option value="Bombhot">Bombhot</option>
+    <option value="Bråk">Bråk</option>
+    <option value="Detonation">Detonation</option>
+    <option value="Djur">Djur skadat/omhändertaget</option>
+    <option value="Försvunnen person">Försvunnen person</option>
+    <option value="Inbrott, försök">Inbrott, försök</option>
+    <option value="Knivlagen">Knivlagen</option>
+    <option value="Misshandel">Misshandel</option>
+    <option value="Mord/dråp">Mord/dråp</option>
+    <option value="Narkotikabrott">Narkotikabrott</option>
+    <option value="Rån">Rån</option>
+    <option value="Skottlossning">Skottlossning</option>
+    <option value="Stöld">Stöld</option>
+    <option value="Trafikolycka">Trafikolycka</option>
+    <option value="Våld/hot mot tjänsteman">Våld/hot mot tjänsteman</option>
+  </select>
+  <input type="button" class="btn btn-primary" id="submit" value="Starta Krim Scanner">
+</div>
+
+<div contenteditable="true" spellcheck="false" oncut="return false"
+  onpaste="return false" onkeydown="if(event.metaKey) return true; return false;">
+ 
+</div>
+  <script src="index.js"></script>
+</body>
+</html>

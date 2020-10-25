@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <header>
+    <span>KRIM SCANNER</span>
+  </header>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cities.html">Cities</a></li>
+    <li><a href="crimesearch.html">Search</a></li>
+    <li><a href="stats.html">Stats</a></li>
+  </nav>
+
+<label for="http">HTTPS Address:</label>
+<input id="http" type="url" value="https://avancera.app/cities/" style="width: 300px;">
+
+<select name="request" id="request" >
+  <option value="">Choose Request:</option>
+  <option name="get" id="get" value="get">GET</option>
+  <option name="del" id="del" value="del">DELETE</option>
+  <option name="put" id="put" value="put">PUT</option>
+</select>
+<input type="text" id="id" placeholder="Write ID">
+<input class="avanceraReq" type="text" id="putContext" placeholder="Write New Population">
+<input class="avanceraReq" type="text" id="putName" placeholder="Write New Name">
+
+<button type="button" id="buttonRequest" class="buttonRequest" class="getButtonVisible" class="btn btn-primary  ">Let's GET it!</button>
+<button id="putButton" class="putButton" onclick="put()">PUT</button>
+<button id="delete" onclick="del()">Delete</button>
+<div contenteditable="true" id="cityText"></div>
+
+
+
+
+
+<script src="cities.js"></script>
+</body>
+</html>

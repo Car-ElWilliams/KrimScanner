@@ -1,0 +1,178 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+header {
+  /* background-image: url(https://images.pexels.com/photos/3042058/pexels-photo-3042058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+  background-image: url(Assets/rsz_11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night_ejpalfn3__f0005.png);
+  max-width: 100%;
+  height: 30em;
+}
+header span {
+  color: #fff;
+  font-size: 120px;
+  text-shadow: 3px 2.7px #000;
+}
+
+nav {
+  background-color: rgba(red, green, blue, 0);
+  border: white;
+  height: 3em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 60px;
+}
+
+nav li {
+  font-size: 3em;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none !important;
+  text-shadow: 2px 2px #000;
+  color: white;
+}
+
+div {
+  color: black;
+}
+
+div[contenteditable='true'] {
+  width: 77em;
+  height: 2000px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 22px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 17%;
+  height: 25px;
+  margin-left: 0;
+}
+
+select {
+  width: 180px;
+  height: 30px;
+  padding: 0px;
+}
+
+label {
+  color: white;
+}
+
+table th {
+  font-size: 1.3em;
+}
+
+.table-hover tbody tr:hover td {
+  color: red;
+}
+
+[contenteditable='true'] {
+  color: #eff;
+}
+
+/* CLASSES */
+
+#top10 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 2.7em;
+  margin-bottom: 1.5em;
+}
+
+/* BUTTONS */
+
+#submit {
+  margin-left: 10px;
+  height: 42px;
+  position: relative;
+  top: 4px;
+}
+
+.scanner {
+  margin-left: 12em;
+}
+
+.Today-Report {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  margin-top: 5%;
+  overflow: auto;
+  padding-bottom: 10%;
+}
+
+.avanceraReq {
+  display: none;
+}
+
+.buttonRequest {
+  display: none;
+}
+
+.getButtonVisible {
+  display: ruby;
+}
+
+.putButton {
+  display: none;
+}
+
+.idRemove {
+  display: none;
+}
+
+.deleteMe {
+  display: none;
+}
+
+#statsButton {
+  height: 41px;
+  position: relative;
+  bottom: 1px;
+  width: 15em;
+}
+
+.form-control {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#crimeType {
+  height: 42px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.stats-position {
+  display: flex;
+  justify-content: center;
+}
+
+#city-stats {
+  width: 17em;
+  margin-right: 11px;
+}
+
+#name {
+  color: white;
+  margin-bottom: 5px;
+  margin-left: 100px;
+}
