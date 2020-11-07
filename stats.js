@@ -16,16 +16,14 @@ function cityStats() {
     let ranNumber = 0
     let traType = []
     let traNumber = 0
-      let morType = []
-      let morNumber = 0
-      let bedType = []
-      let bedNumber = 0
-      let skoType = []
-      let skoNumber = 0
-      let narType = []
-      let narNumber = 0
-      // let skoType = []
-      // let skoNumber = 0
+    let morType = []
+    let morNumber = 0
+    let bedType = []
+    let bedNumber = 0
+    let skoType = []
+    let skoNumber = 0
+    let narType = []
+    let narNumber = 0
       
       getType(result)
     function getType(result) {
@@ -51,9 +49,7 @@ function cityStats() {
         if (result[i].type === "Narkotikabrott") {
           narType.push([result[i].type])
         }
-        // if (result[i].type === 'Misshandel') {
-        //       missType.push([result[i].type])
-        //     }
+
       }
       missNumber = missType.length
       ranNumber = ranType.length
@@ -61,24 +57,19 @@ function cityStats() {
       morNumber = morType.length
       bedNumber = bedType.length
       skoNumber = skoType.length
-      narNumber = narType.length
-      // missNumber = missType.length  
+      narNumber = narType.length 
       console.log(missNumber, ranNumber, traNumber, morNumber, bedNumber, skoNumber, narNumber);
       console.log(narType)
 
       divName.innerHTML = `Resultat för ${city.value}: <strong>${missType.length + ranType.length + traType.length + morType.length + bedType.length + skoType.length + narType.length}</strong>`
-     
-      
-      
-      
+    
       let allCitiesChart = document.querySelector('#myChart').getContext('2d')
       let allCitiesDoughnut = null;
       allCitiesDoughnut = new Chart(allCitiesChart, {
         type: 'doughnut',
-  
         data: {
           datasets: [{
-            data: [missNumber, ranNumber, traNumber, morNumber, bedNumber, skoNumber, narNumber, 0],
+            data: [missNumber, ranNumber, traNumber, morNumber, bedNumber, skoNumber, narNumber],
             backgroundColor: [
               "rgb(255, 0, 30)",
               "yellow",
@@ -87,7 +78,6 @@ function cityStats() {
               "purple",
               "pink",
               "orange",
-              "black"
             ],
           }],
           labels: [
@@ -98,23 +88,9 @@ function cityStats() {
             'Bedrägeri',
             'Skottlossning',
             'Narkotikabrott',
-            'Rån'
           ],
         }
       });
     }
-    })
+  })
 }
-
-
-
-
-
-
-
-//JS Chart
-
-
-
-
-
