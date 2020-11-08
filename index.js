@@ -1,3 +1,6 @@
+let vid = document.getElementById("Video");
+let header = document.getElementById('headerNone')
+let copVideo = document.getElementById('copModeVideo')
 
 let date = ''
 
@@ -127,3 +130,27 @@ city.value = localStorage.getItem("CityStats");
 city.addEventListener('change', function () {
   localStorage.setItem('CityStats', city.value)
 })
+
+
+// BAD BOYS MUSIC MODE
+ function videoplay () {
+   if (vid.src === "https://www.youtube.com/embed/is8I6Mq9XUU") {
+     vid.src += "?autoplay=1";
+     console.log('music on');
+   }
+
+   else if (vid.src === "https://www.youtube.com/embed/is8I6Mq9XUU?autoplay=1"){ 
+vid.src = "https://www.youtube.com/embed/is8I6Mq9XUU"
+   }
+
+ if (header.classList.contains('headerNone') === true) {
+   header.classList.remove('headerNone')
+   console.log('im gone');
+  }
+ 
+  else if (header.classList.contains('headerNone') !== true) {
+     header.classList.add('headerNone')
+     console.log('im added');
+  } 
+ copVideo.classList.toggle('policeVideo');
+};
