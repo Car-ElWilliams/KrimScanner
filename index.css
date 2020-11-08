@@ -4,7 +4,8 @@ body {
 }
 
 header {
-  background-image: url(Assets/rsz_11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night_ejpalfn3__f0005.png);
+  /* background-image: url(Assets/rsz_11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night_ejpalfn3__f0005.png); */
+  background-image: url(https://i.ibb.co/jk8xDdr/rsz-11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night-ejpalfn3-f0005.png);
   max-width: 100%;
   height: 30em;
 }
@@ -248,4 +249,3 @@ table th {
 .headerNone {
   display: none;
 }
-
