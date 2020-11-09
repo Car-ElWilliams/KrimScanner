@@ -6,15 +6,13 @@ body {
 header {
   /* background-image: url(Assets/rsz_11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night_ejpalfn3__f0005.png); */
   background-image: url(https://i.ibb.co/jk8xDdr/rsz-11flashing-lights-of-police-cars-paramedics-putting-patient-ambulance-van-night-ejpalfn3-f0005.png);
-  zoom: 1.5; /*DMITRI*/
-  background-position: center; /*DMITRI*/
-  max-width: 100vw; /*DMITRI*/
-  height: 25em; /*DMITRI*/
-  border-bottom: groove dodgerblue; /*DMITRI*/
-  border-width: 10px; /*DMITRI*/
+  zoom: 1.5; 
+  background-position: center; 
+  max-width: 100vw; 
+  height: 25em; 
+  border-bottom: groove dodgerblue; 
+  border-width: 10px; 
 }
-
-/*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*/
 header span {
   color: white;
   font-size: 90px;
@@ -22,12 +20,10 @@ header span {
   5px 0px 5px black,
   -1px 2px 5px black;
 }
-/*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*/
 #headerLetterK,
 #headerLetterS {
   font-size: 120px;
 }
-/*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*/
 #myCopButton {
   font-size: 27px;
   width: 15vw;
@@ -39,7 +35,6 @@ header span {
   box-shadow: -2px 2px 5px white;
   transition-duration: 0.2s;
 }
-/*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*/
 #myCopButton:hover {
   background-color:  dodgerblue;
   transition-duration: 0.2s;
@@ -47,7 +42,7 @@ header span {
   text-shadow: -0px 1px 3px white;
   box-shadow: -0px 0px 0px white;
 }
-/*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*DMITRI*/
+
 
 
 nav {
