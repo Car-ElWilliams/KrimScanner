@@ -19,28 +19,52 @@
     <li><a href="crimesearch.html">Search</a></li>
     <li><a href="stats.html">Stats</a></li>
   </nav>
-
-<label for="http">HTTPS Address:</label>
-<input id="http" type="url" value="https://avancera.app/cities/" style="width: 300px;">
+  <span class="underHeader">
+  <label for="http">HTTPS Address:</label>
+  <input id="http" type="url" value="https://avancera.app/cities/" style="width: 300px;">
 
 <select name="request" id="request" >
   <option value="">Choose Request:</option>
   <option name="get" id="get" value="get">GET</option>
+  <option name="post" id="post" value="post" >POST</option>
   <option name="del" id="del" value="del">DELETE</option>
   <option name="put" id="put" value="put">PUT</option>
 </select>
-<input type="text" id="id" placeholder="Write ID">
-<input class="avanceraReq" type="text" id="putContext" placeholder="Write New Population">
-<input class="avanceraReq" type="text" id="putName" placeholder="Write New Name">
+<span>
 
-<button type="button" id="buttonRequest" class="buttonRequest" class="getButtonVisible" class="btn btn-primary  ">Let's GET it!</button>
-<button id="putButton" class="putButton" onclick="put()">PUT</button>
-<button id="delete" onclick="del()">Delete</button>
-<div contenteditable="true" id="cityText"></div>
+<!-- PUT FIELDS -->
+<div class="btnContainer">
+  <div class="putdiv">
+  <input type="text" id="id" class="avanceraReq" placeholder="Change ID">
+  <input class="avanceraReq" type="text" id="putContext" placeholder="Change Population">
+  <input class="avanceraReq" type="text" id="putName" placeholder="Change Name">
+  <!-- POST FIELDS -->
+  <input type="text" id="postId" class="avanceraReq" placeholder="Write New Id">
+  <input type="text" id="postName" class="avanceraReq" placeholder="Write New Name">
+  <input type="text" id="postPopulation" class="avanceraReq" placeholder="Write New Population">
+  </div>
+  <button id="putButton" class="putButton" onclick="put()">PUT</button>
+  <button id="delete" class="absoluteDelete" onclick="del()">DELETE</button>
+  <button id="postButton" class="postButton"  class="avanceraReq" onclick="post()" >POST</button>
+  <button type="button" id="buttonRequest" class="buttonRequest" class="getButtonVisible" class="btn btn-primary  ">Let's GET it!</button>
+</div>
 
-
-
-
+<table class="table-bordered table-hover table-condensed" id="cityTable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Namn</th> 
+      <th>Population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="cityId"></td>
+      <td id="cityName"></td>
+      <td id="cityPop"></td>
+    </tr>
+  </tbody>
+</table>
 
 <script src="cities.js"></script>
 </body>
