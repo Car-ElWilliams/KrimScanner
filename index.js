@@ -5,7 +5,7 @@ let copVideo = document.getElementById('copModeVideo')
 
 
 
-//DMITRI//DMITRI////DMITRI////DMITRI////DMITRI////DMITRI////DMITRI//
+
 const copButtonChangeText = document.getElementById("myCopButton");
 copButtonChangeText.addEventListener("click", function(a) {
   if (copButtonChangeText.innerHTML = "COP MODE") {
@@ -15,7 +15,7 @@ copButtonChangeText.addEventListener("click", function(a) {
   }
   a.preventDefault();
 });
-//DMITRI//DMITRI////DMITRI////DMITRI////DMITRI////DMITRI////DMITRI//
+
 
 
 
