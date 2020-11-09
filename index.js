@@ -2,6 +2,23 @@ let vid = document.getElementById("Video");
 let header = document.getElementById('headerNone')
 let copVideo = document.getElementById('copModeVideo')
 
+
+
+
+//DMITRI//DMITRI////DMITRI////DMITRI////DMITRI////DMITRI////DMITRI//
+const copButtonChangeText = document.getElementById("myCopButton");
+copButtonChangeText.addEventListener("click", function(a) {
+  if (copButtonChangeText.innerHTML == "COP MODE") {
+    copButtonChangeText.innerHTML = "NORMAL MODE";
+  } else {
+    copButtonChangeText.innerHTML = "COP MODE";
+  }
+  a.preventDefault();
+});
+//DMITRI//DMITRI////DMITRI////DMITRI////DMITRI////DMITRI////DMITRI//
+
+
+
 let date = ''
 
 dates()
@@ -33,47 +50,48 @@ function dates() {
         date += n
 
         //WHOLE DATE
-        console.log(date)
+        console.log(date);
     }
     
 // Today Recent 10 Police Reports
   let promise = fetch ("https://polisen.se/api/events?DateTime=") 
   .then(response => {
-    console.log(response)
-    let otherPromise = response.json()
-    return otherPromise
+    console.log(response);
+    let otherPromise = response.json();
+    return otherPromise;
   })
+
   .then(result => {
-  topTen(result)
+  topTen(result);
     function topTen(result) {
-    let ten = []
+    let ten = [];
     for (let x = 0; x < 10; x++) {
-      ten.push([result[x]])   
+      ten.push([result[x]]);   
     }  
-    console.log(ten, ten.length)
+    console.log(ten, ten.length);
 
 //TOP TEN
-city10Loop(ten)
+city10Loop(ten);
 function city10Loop (ten){
   for (let i = 0; i < ten.length; i++) {
     
     if (ten[i][0].type === 'sammanfattning natt') {
-      splice(ten[i], 1)
+      splice(ten[i], 1);
     }
-    console.log(ten[5][0].id , ten.length, i)
-    let topTenCities = document.querySelectorAll('#cityTableData')
-    topTenCities[i].innerHTML = `<strong>${ten[i][0].location.name}</strong>` 
+    console.log(ten[5][0].id , ten.length, i);
+    let topTenCities = document.querySelectorAll('#cityTableData');
+    topTenCities[i].innerHTML = `<strong>${ten[i][0].location.name}</strong>`;
 
     //TOP TEN SUMMARY
-    let summaryTen = document.querySelectorAll('#summary10')
-    summaryTen[i].textContent = ten[i][0].summary
+    let summaryTen = document.querySelectorAll('#summary10');
+    summaryTen[i].textContent = ten[i][0].summary;
     //TOP TEN DATE
-    let dateTen = document.querySelectorAll('#dateTen')
-    dateTen[i].innerHTML = `<strong>${ten[i][0].datetime}</strong>` 
+    let dateTen = document.querySelectorAll('#dateTen');
+    dateTen[i].innerHTML = `<strong>${ten[i][0].datetime}</strong>`; 
       }
     }
   }
-})  
+});
 
 //Submit Button Value fetch
 let submit = document.querySelector('#submit')
@@ -126,10 +144,10 @@ sessionStorage.setItem("autosave", city.value);
 document.cookie = 'name=Carel'
 
 //MEMORY LOCAL
-city.value = localStorage.getItem("CityStats");
+city.value = localStorage.getItem("cityStats");
 city.addEventListener('change', function () {
-  localStorage.setItem('CityStats', city.value)
-})
+  localStorage.setItem('cityStats', city.value)
+});
 
 
 // BAD BOYS MUSIC MODE
