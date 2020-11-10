@@ -229,6 +229,7 @@ function videoplay() {
 
   else if (vid.src === "https://www.youtube.com/embed/is8I6Mq9XUU?autoplay=1") {
     vid.src = "https://www.youtube.com/embed/is8I6Mq9XUU"
+    console.log('im gone');
   }
 
   if (header.classList.contains('headerNone') === true) {
