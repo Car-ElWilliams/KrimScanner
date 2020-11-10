@@ -5,13 +5,15 @@ let copVideo = document.getElementById('copModeVideo')
 
 
 
-
+const navMarginChange = document.querySelector("nav");
 const copButtonChangeText = document.getElementById("myCopButton");
 copButtonChangeText.addEventListener("click", function(a) {
-  if (copButtonChangeText.innerHTML = "COP MODE") {
+  if (copButtonChangeText.innerHTML == "COP MODE") {
     copButtonChangeText.innerHTML = "NORMAL MODE";
+    navMarginChange.style.marginTop = "7vw";
   } else {
     copButtonChangeText.innerHTML = "COP MODE";
+    navMarginChange.style.marginTop = "5vw";
   }
   a.preventDefault();
 });
@@ -19,7 +21,7 @@ copButtonChangeText.addEventListener("click", function(a) {
 
 
 
-let date = ''
+let date = '';
 
 dates()
 // TODAYS DATE FUNCTION
@@ -28,21 +30,21 @@ function dates() {
  //YEAR
   var year = new Date()
   var newYear = year.getFullYear()
-  date += newYear + '-'
+  date += newYear + '-';
   
   //MONTH
-   let zero = '0'
+   let zero = '0';
    var month = new Date()
    var newMonth = month.getMonth() + 1
 
    if (newMonth < 10) {
         zero += newMonth
-        console.log(zero)
-         date += zero + '-'
+        console.log(zero);
+         date += zero + '-';
       } 
       else {
           console.log(newMonth)
-          date += newMonth + '-'
+          date += newMonth + '-';
         }
         //DAY
         var d = new Date();
