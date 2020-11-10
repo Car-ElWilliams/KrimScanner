@@ -8,7 +8,7 @@ let copVideo = document.getElementById('copModeVideo')
 const navMarginChange = document.querySelector("nav");
 const copButtonChangeText = document.getElementById("myCopButton");
 copButtonChangeText.addEventListener("click", function(a) {
-  if (copButtonChangeText.innerHTML == "COP MODE") {
+  if (copButtonChangeText.innerHTML = "COP MODE") {
     copButtonChangeText.innerHTML = "NORMAL MODE";
     navMarginChange.style.marginTop = "7vw";
   } else {
@@ -95,9 +95,10 @@ function city10Loop (ten){
   }
 });
 
-//Submit Button Value fetch
+//Crime Search Button 
 let submit = document.querySelector('#submit')
-// submit.addEventListener('click', f)
+submit.addEventListener('click', f)
+//City Input Value - Crime Search
 let city = document.querySelector('#city')
 let crimeType = document.querySelector('select')
 
@@ -113,8 +114,10 @@ function enter (click) {
 }
 
 //Textarea Results
-let textArea = document.querySelector('[contenteditable="true"]')
-function f (){
+function f() {
+  let textArea = document.querySelector('[contenteditable="true"]')
+  let city = document.querySelector('#city')
+  let crimeType = document.querySelector('select')
   fetch ("https://polisen.se/api/events?locationname=" + city.value + '&type=' + crimeType.value, ) 
   .then(response => {
     console.log(response)
