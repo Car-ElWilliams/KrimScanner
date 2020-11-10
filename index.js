@@ -13,7 +13,7 @@ copButtonChangeText.addEventListener("click", function (a) {
     navMarginChange.style.marginTop = "7vw";
   } else {
     copButtonChangeText.innerHTML = "COP MODE";
-    navMarginChange.style.marginTop = "5vw";
+    navMarginChange.style.marginTop = "4vw";
   }
   a.preventDefault();
 });
