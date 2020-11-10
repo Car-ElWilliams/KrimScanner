@@ -160,7 +160,7 @@ nav li {
 
 nav li a {
   text-decoration: none !important;
-  color: red;
+  color: dodgerblue;
   text-shadow: -1px 1px 0px white, -2px 0px 3px steelblue;
   transition-duration: 0.3s;
 }
